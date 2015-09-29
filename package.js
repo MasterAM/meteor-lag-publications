@@ -19,6 +19,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
+  api.use('check', 'server');
   api.use('tinytest');
   api.use('alon:lag-publications');
   api.addFiles('tests/server/configs.js', ['client', 'server']);
