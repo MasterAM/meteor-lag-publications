@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 ### Changed
-- Nothing.
+- Prevent delay if unblock will not perform its role (if it's a dummy function).
 
 ## 1.0.0 - 2015-09-27
 ### Added
