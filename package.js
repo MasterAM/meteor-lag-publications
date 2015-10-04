@@ -10,7 +10,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.1');
   api.use('meteorhacks:meteorx@1.0.2');
-  api.use(['meteorhacks:unblock@1.0.2']);
+  api.use(['meteorhacks:unblock@1.0.2'], 'server', {weak: true});
   api.use(['alon:lag-base@1.0.2']);
   api.addFiles([
     'lib/globals.js',
