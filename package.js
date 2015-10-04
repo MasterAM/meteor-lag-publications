@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.1');
   api.use('meteorhacks:meteorx@1.0.2');
   api.use(['meteorhacks:unblock@1.0.2']);
-  api.use(['alon:lag-base@1.0.0']);
+  api.use(['alon:lag-base@1.0.2']);
   api.addFiles([
     'lib/globals.js',
     'lib/bootstrap.js',
