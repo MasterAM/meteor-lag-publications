@@ -1,7 +1,7 @@
 Package.describe({
   name: 'alon:lag-publications',
   summary: 'Adds delay to publications on your development machine.',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/MasterAM/meteor-lag-publications',
   documentation: 'README.md',
   debugOnly: true
@@ -9,11 +9,13 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.1');
+  api.use('meteorhacks:meteorx@1.0.2');
   api.use(['meteorhacks:unblock@1.0.2']);
   api.use(['alon:lag-base@1.0.0']);
   api.addFiles([
     'lib/globals.js',
-    'lib/bootstrap.js'
+    'lib/bootstrap.js',
+    'lib/unblock.js'
   ], 'server');
   api.export('publicationConfigurator', 'server');
 });
